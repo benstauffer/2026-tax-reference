@@ -1,0 +1,35 @@
+name: personal-finance-plugin
+display_name: Personal Finance Plugin
+version: 0.2.0
+description: >
+  Tax analysis and wealth planning plugins for solopreneurs and business owners.
+  Client-facing tax analysis and planning for business owners.
+
+marketplace:
+  title: Personal Finance Plugin — Claude Code Plugin Marketplace
+  slug: personal-finance-plugin
+  category: finance
+  tagline: Tax analysis and wealth planning plugins for solopreneurs and business owners.
+  install: |
+    /plugin marketplace add personal-finance-plugin
+    /plugin install personal-finance@personal-finance-plugin
+
+data:
+  source: 2026-Tax-Reference.md
+
+plugins:
+  - name: Personal Finance Plugin
+    version: 0.2.0
+    description: Client-facing tax analysis and planning for business owners.
+    commands:
+      - name: /tax-review
+        description: Upload an IRS transcript for instant situation review and optimization opportunities
+
+      - name: /estimate
+        description: Run tax estimates with actionable recommendations
+
+      - name: /entity-compare
+        description: Compare S-Corp vs Schedule C with implementation roadmaps
+
+      - name: /projection
+        description: Build 5-year projections with year-by-year action plans
